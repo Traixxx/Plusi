@@ -1,4 +1,3 @@
-*ЗАВДАННЯ ЗА 3 ЛАБОРАТОРНУ РОБОТУ*
 
 // Example program
 #include <iostream>
