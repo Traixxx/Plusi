@@ -4,29 +4,30 @@
 #include <ctime>
 using namespace std;
 
-int main()
-{
-int arr[4][3];
-int acc = 0;
-
-srand(time(NULL));
-
-for(int i=0; i<4; i++){
-    cout << "\n";
-for(int j=0; j<3; j++){      
-    arr[i][j] = rand() % 101;
-    cout << arr[i][j] << " ";
- }
- }
+int main(void) {
+    int m = 4;
+    int n = 3;
+    int arr[m][n];
     
-for(int i=0; i<4; i++){
-    acc = 0;   
-for(int j=0; j<3; j++){ 
-    acc = 0; 
-     if(arr[i][j] % 2 == 0) acc++; 
- }
-     cout << "\n" << "acc = " << acc << "\n";
-  
+    srand(time(NULL));
+    for (int i = 0; i < m; i++){
+    for (int j = 0; j < n; j++){
+        arr[i][j] = rand() % 100;
+        cout << arr[i][j] << " ";
+        }
+    cout << endl;
+    }
+
+    for (int i = 0; i < m; i++){
+        int d = 0;
+    for (int j = 0; j < n; j++){
+        if (arr[i][j] == 0){
+        }
+            
+        else if (arr[i][j] % 2 == 0){
+            d++;
+        }
+        }
+    cout<<i+1<< " row have "<<d<<" double letters"<<endl;
 }
-return 0;
 }
