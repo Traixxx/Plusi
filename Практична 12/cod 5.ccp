@@ -20,19 +20,19 @@ int main(void){
     }
     
     int max = arr[0][0];
-    int maxnum = 0;
+    int maxn = 0;
     int num = 0;
     
     for (int i = 0; i < m; i++){        
     for (int j = 0; j < n; j++){
             num++;
             if (arr[i][j] > max){
-            max = arr[i][j]; maxnum = num; 
+            max = arr[i][j]; maxn = num; 
             }
     }
     }
     cout << "Max number: "
     << max << endl;
     cout << "Number of number: "
-    << maxnum << endl;
+    << maxn << endl;
 }
